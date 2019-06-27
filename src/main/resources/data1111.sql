@@ -1,0 +1,14 @@
+--INSERT INTO "LAYOUT"("ID_LAYOUT","LAYOUT_DESCRIPTION","LAYOUT_IMAGE_PREVIEW","LAYOUT_NAME","LAYOUT_STATUS")VALUES(1,'this is my firts layoutBean','https://docs.microsoft.com/en-us/aspnet/core/mvc/views/layoutBean/_static/page-layoutBean.png?view=aspnetcore-2.2','Layout1',true);
+--
+--
+--INSERT INTO "SITE"("ID_SITE","SITE_NAME","SITE_STATUS")VALUES(1,'Site1',true),(2,'Site2',true);
+--
+--INSERT INTO "PAGE"("ID_PAGE","DESCRIPTION","NAME","URL","ID_LAYOUT","ID_SITE")VALUES (1,'this is home','home','/home',1,1),(2,'this is about us','aboutUs','/aboutUs',1,1);
+--
+--INSERT INTO "REGION"("ID_REGION","NAME","WIDTH","ID_LAYOUT")VALUES(1,'header','12',1),(2,'left','6',1),(3,'right','6',1),(4,'footer','12',1);
+--
+--INSERT INTO "CONTAINER"("ID_CONTAINER","WIDTH","ID_REGION")VALUES(1,'12',1),(2,'12',2),(3,'12',3);
+--
+--INSERT INTO "WIDGET"("ID_WIDGET","NAME","STATUS","TAG","WIDTH","DESCRIPTION","ID_CONTAINER")VALUES(1,'login',true,'login','8','Form to login',1),(2,'login',true,'login','8','Form to login',2),(3,'login',true,'login','8','Form to login',3);
+--
+--INSERT INTO "ATTRIBUTE"("ID_ATTRIBUTE","DESCRIPTION","NAME","ID_WIDGET")VALUES(1,'#fff','color',1),(2,'My Login','title',1);
